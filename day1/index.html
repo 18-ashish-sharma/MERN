@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name">Hi Karn</h1>
+    <button id="btn">Click me to change the title</button>
+
+    <script>
+    //  variable   whole html page   getelementbyid - function provided by javascript.
+        let nameElement = document.getElementById('name');
+        let btnElement = document.getElementById('btn');
+        // addEventListenr -> 
+        btnElement.addEventListener('click', changeName);
+
+    // create js function
+    //        funtion name   () -> js function
+    function changeName() {
+        // innerHTML - text
+        // a = 10, a = 20
+        nameElement.innerHTML = 'Bye Karn';
+    }
+    </script>
+</body>
+</html>
